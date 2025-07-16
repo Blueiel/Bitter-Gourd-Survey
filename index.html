@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Small Scale Bitter Gourd Survey</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      margin: 0;
+      background: #f4f8f3;
+      color: #222;
+    }
+    .container {
+      max-width: 700px;
+      margin: 40px auto;
+      background: #fff;
+      border-radius: 14px;
+      box-shadow: 0 4px 24px rgba(44,122,94,0.10);
+      padding: 32px 24px 24px 24px;
+    }
+    h2 {
+      color: #2a7a2e;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+    .subtitle {
+      color: #4e944f;
+      text-align: center;
+      margin-bottom: 24px;
+      font-size: 1.1em;
+    }
+    .top-btns {
+      display: flex;
+      justify-content: flex-end;
+      margin-bottom: 18px;
+    }
+    .top-btns a {
+      background: #2a7a2e;
+      color: #fff;
+      padding: 10px 22px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.2s;
+      margin-left: 8px;
+      box-shadow: 0 2px 8px rgba(44,122,94,0.07);
+    }
+    .top-btns a:hover {
+      background: #256626;
+    }
+    form {
+      margin-top: 0;
+    }
+    .section {
+      margin-top: 28px;
+      padding-top: 10px;
+      border-top: 2px solid #e2e8e4;
+    }
+    h3 {
+      color: #256626;
+      margin-bottom: 10px;
+      font-size: 1.1em;
+    }
+    label {
+      display: block;
+      margin: 14px 0 6px;
+      font-weight: 500;
+      color: #2a7a2e;
+    }
+    input[type="text"], select {
+      width: 100%;
+      padding: 9px;
+      margin-bottom: 8px;
+      border: 1px solid #b7d7b0;
+      border-radius: 5px;
+      font-size: 1em;
+      background: #f8fbf7;
+      transition: border 0.2s;
+    }
+    input[type="text"]:focus, select:focus {
+      border: 1.5px solid #4e944f;
+      outline: none;
+      background: #f4fff0;
+    }
+    .radio-group, .checkbox-group {
+      margin-bottom: 10px;
+      margin-left: 8px;
+    }
+    .radio-group label, .checkbox-group label {
+      display: flex;
+      align-items: center;
+      font-weight: 400;
+      margin: 4px 0;
+      color: #222;
+      cursor: pointer;
+    }
+    .radio-group input[type="radio"], .checkbox-group input[type="checkbox"] {
+      margin-right: 8px;
+      accent-color: #2a7a2e;
+      transform: scale(1.15);
+    }
+    .inline-label {
+      display: inline-block;
+      margin-right: 18px;
+    }
+    .group-title {
+      font-weight: 500;
+      color: #256626;
+      margin-top: 10px;
+      margin-bottom: 2px;
+      display: block;
+    }
+    button[type="submit"] {
+      background: linear-gradient(90deg, #2a7a2e 60%, #4e944f 100%);
+      color: white;
+      padding: 12px 32px;
+      border: none;
+      border-radius: 7px;
+      cursor: pointer;
+      font-size: 1.1em;
+      font-weight: bold;
+      margin-top: 18px;
+      box-shadow: 0 2px 8px rgba(44,122,94,0.07);
+      transition: background 0.2s;
+      display: block;
+      width: 100%;
+    }
+    button[type="submit"]:hover {
+      background: linear-gradient(90deg, #256626 60%, #4e944f 100%);
+    }
+    @media (max-width: 600px) {
+      .container {
+        padding: 12px 4vw 18px 4vw;
+      }
+      button[type="submit"] {
+        padding: 12px 0;
+      }
+    }
+    .note {
+      font-size: 0.95em;
+      color: #888;
+      margin-bottom: 8px;
+      margin-top: -8px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Small Scale Bitter Gourd Farm and Products</h2>
+    <div class="subtitle">We value your feedback! Please answer the survey below.</div>
+    <div class="top-btns">
+      <a href="responses.php">View Survey Responses</a>
+    </div>
+    <form action="submit.php" method="post" autocomplete="off">
+
+      <!-- Section A -->
+      <div class="section">
+        <h3>A. Socio-Demographic Characteristics</h3>
+        <label for="age">Age:</label>
+        <select name="age" id="age" required>
+          <option value="">-- Select Age Range --</option>
+          <option>18-25</option>
+          <option>26-35</option>
+          <option>36-50</option>
+          <option>51-above</option>
+        </select>
+
+        <label for="occupation">Occupation:</label>
+        <select name="occupation" id="occupation" required>
+          <option value="">-- Select Occupation --</option>
+          <option>Student</option>
+          <option>Teacher</option>
+          <option>Driver</option>
+          <option>Police</option>
+          <option>Fisherman</option>
+          <option>Delivery man</option>
+          <option>Community development officer</option>
+          <option>Business owner</option>
+          <option>Gov. Employee</option>
+          <option>Part time</option>
+          <option>Smart</option>
+          <option>Caregiver</option>
+          <option>Nurse attendant</option>
+          <option>Chef cook</option>
+          <option>Janitor</option>
+          <option>Unemployed</option>
+          <option>Engineer</option>
+          <option>Midwife</option>
+          <option>Freelancing</option>
+          <option>Tutor</option>
+          <option>Welder</option>
+          <option>Helper</option>
+          <option>Cashier</option>
+          <option>Senior</option>
+          <option>Retired</option>
+          <option>Farmer</option>
+          <option>Nanny</option>
+          <option>Crane operator</option>
+          <option>Fireman</option>
+          <option>Product Development</option>
+          <option>Supervisor</option>
+          <option>Laborer</option>
+          <option>Sales lady/Sales boy</option>
+          <option>Technician</option>
+          <option>Casual</option>
+          <option>Housewife</option>
+          <option>STL agent</option>
+          <option>Electrician</option>
+          <option>Service crew</option>
+          <option>Vendor</option>
+          <option>Tailor</option>
+          <option>Security guard</option>
+          <option>Employee staff</option>
+          <option>Construction</option>
+        </select>
+
+        <label for="income">Monthly Income/Allowance:</label>
+        <select name="income" id="income" required>
+          <option value="">-- Select Monthly Income/Allowance --</option>
+          <option>1,000 below</option>
+          <option>1,000-10,000</option>
+          <option>11,000-20,000</option>
+          <option>21,000- 30,000</option>
+          <option>31,000-above</option>
+        </select>
+      </div>
+
+      <!-- Section B -->
+      <div class="section">
+        <h3>B. Diagnostic Questions</h3>
+
+        <label>1. Do you enjoy eating bitter gourd (Ampalaya)?</label>
+        <div class="radio-group">
+          <label class="inline-label"><input type="radio" name="enjoy" value="Yes" required> Yes</label>
+          <label class="inline-label"><input type="radio" name="enjoy" value="No"> No</label>
+        </div>
+
+        <label>2. How often do you consume bitter gourd?</label>
+        <div class="radio-group">
+          <label class="inline-label"><input type="radio" name="frequency" value="Daily" required> Daily</label>
+          <label class="inline-label"><input type="radio" name="frequency" value="Every other day"> Every other day</label>
+          <label class="inline-label"><input type="radio" name="frequency" value="Weekly"> Weekly</label>
+          <label class="inline-label"><input type="radio" name="frequency" value="Twice a month"> Twice a month</label>
+          <label class="inline-label"><input type="radio" name="frequency" value="Monthly"> Monthly</label>
+          <label class="inline-label"><input type="radio" name="frequency" value="Rarely"> Rarely</label>
+        </div>
+
+        <label>3. Are you interested in trying new bitter gourd products?</label>
+        <div class="radio-group">
+          <label class="inline-label"><input type="radio" name="interested" value="Yes" required> Yes</label>
+          <label class="inline-label"><input type="radio" name="interested" value="No"> No</label>
+        </div>
+
+        <label>4. What type of bitter gourd products do you prefer?</label>
+        <div class="checkbox-group">
+          <label><input type="checkbox" name="product_type[]" value="Fresh"> Fresh bitter gourd</label>
+          <label><input type="checkbox" name="product_type[]" value="Tea"> Ampalaya tea</label>
+          <label><input type="checkbox" name="product_type[]" value="Juice"> Ampalaya juice</label>
+          <label><input type="checkbox" name="product_type[]" value="Powder"> Ampalaya powder juice</label>
+          <label><input type="checkbox" name="product_type[]" value="Other"> Other (specify below)</label>
+          <input type="text" name="product_type_other" placeholder="Other product type (optional)">
+        </div>
+
+        <label>5. What factors are most important when buying?</label>
+        <div class="checkbox-group">
+          <label><input type="checkbox" name="buy_factors[]" value="Freshness"> Freshness</label>
+          <label><input type="checkbox" name="buy_factors[]" value="Taste"> Taste</label>
+          <label><input type="checkbox" name="buy_factors[]" value="Packaging"> Packaging</label>
+          <label><input type="checkbox" name="buy_factors[]" value="Price"> Price</label>
+          <label><input type="checkbox" name="buy_factors[]" value="Certification"> Organic certification</label>
+          <label><input type="checkbox" name="buy_factors[]" value="Other"> Other</label>
+          <input type="text" name="buy_factors_other" placeholder="Other factor (optional)">
+        </div>
+
+        <label>6. Preferred price range (select one each):</label>
+        <div class="radio-group">
+          <span class="group-title">A. Powder Juice (20g)</span>
+          <label class="inline-label"><input type="radio" name="price_powder" value="20" required> ₱20</label>
+          <label class="inline-label"><input type="radio" name="price_powder" value="25"> ₱25</label>
+          <label class="inline-label"><input type="radio" name="price_powder" value="30"> ₱30</label><br>
+
+          <span class="group-title">B. Fresh Bitter Gourd (per kilo)</span>
+          <label class="inline-label"><input type="radio" name="price_fresh" value="100" required> ₱100</label>
+          <label class="inline-label"><input type="radio" name="price_fresh" value="120"> ₱120</label>
+          <label class="inline-label"><input type="radio" name="price_fresh" value="130"> ₱130</label><br>
+
+          <span class="group-title">C. Chips (70g)</span>
+          <label class="inline-label"><input type="radio" name="price_chips" value="15" required> ₱15</label>
+          <label class="inline-label"><input type="radio" name="price_chips" value="25"> ₱25</label>
+          <label class="inline-label"><input type="radio" name="price_chips" value="30"> ₱30</label><br>
+
+          <span class="group-title">D. Pickles (200g jar)</span>
+          <label class="inline-label"><input type="radio" name="price_pickles" value="100" required> ₱100</label>
+          <label class="inline-label"><input type="radio" name="price_pickles" value="115"> ₱115</label>
+          <label class="inline-label"><input type="radio" name="price_pickles" value="120"> ₱120</label><br>
+
+          <span class="group-title">E. Ampalaya Tea (1.5g box)</span>
+          <label class="inline-label"><input type="radio" name="price_tea" value="100" required> ₱100</label>
+          <label class="inline-label"><input type="radio" name="price_tea" value="115"> ₱115</label>
+          <label class="inline-label"><input type="radio" name="price_tea" value="120"> ₱120</label>
+        </div>
+
+        <label>7. Preferred packaging:</label>
+        <div class="radio-group">
+          <label class="inline-label"><input type="radio" name="packaging" value="Plastic" required> Plastic resealable</label>
+          <label class="inline-label"><input type="radio" name="packaging" value="Glass"> Glass jars</label>
+          <label class="inline-label"><input type="radio" name="packaging" value="Eco"> Eco-friendly</label>
+          <label class="inline-label"><input type="radio" name="packaging" value="Other"> Other</label>
+          <input type="text" name="packaging_other" placeholder="Other packaging (optional)">
+        </div>
+
+        <label>8. What marketing strategies would encourage you to buy?</label>
+        <div class="checkbox-group">
+          <label><input type="checkbox" name="marketing[]" value="Discounts"> Discounts and promos</label>
+          <label><input type="checkbox" name="marketing[]" value="Free samples"> Free samples</label>
+          <label><input type="checkbox" name="marketing[]" value="Health ads"> Health benefit info</label>
+          <label><input type="checkbox" name="marketing[]" value="Social media"> Social media campaigns</label>
+          <label><input type="checkbox" name="marketing[]" value="Other"> Other</label>
+          <input type="text" name="marketing_other" placeholder="Other marketing (optional)">
+        </div>
+
+        <label>9. How do you discover new food products?</label>
+        <div class="checkbox-group">
+          <label><input type="checkbox" name="discover[]" value="Social media"> Social media</label>
+          <label><input type="checkbox" name="discover[]" value="Flyers"> Flyers</label>
+          <label><input type="checkbox" name="discover[]" value="TV"> TV/Radio ads</label>
+          <label><input type="checkbox" name="discover[]" value="Word of mouth"> Word of mouth</label>
+          <label><input type="checkbox" name="discover[]" value="Sampling"> In-store sampling</label>
+          <label><input type="checkbox" name="discover[]" value="Other"> Other</label>
+          <input type="text" name="discover_other" placeholder="Other way (optional)">
+        </div>
+
+        <label>10. Where do you usually buy Ampalaya products?</label>
+        <div class="checkbox-group">
+          <label><input type="checkbox" name="buy_place[]" value="Local markets"> Local markets</label>
+          <label><input type="checkbox" name="buy_place[]" value="Supermarkets"> Supermarkets</label>
+          <label><input type="checkbox" name="buy_place[]" value="Farm stalls"> Farm stalls</label>
+          <label><input type="checkbox" name="buy_place[]" value="Online"> Online stores</label>
+          <label><input type="checkbox" name="buy_place[]" value="Specialty"> Specialty health stores</label>
+          <label><input type="checkbox" name="buy_place[]" value="Other"> Other</label>
+          <input type="text" name="buy_place_other" placeholder="Other place (optional)">
+        </div>
+
+        <label>11. Are you aware of the health benefits of bitter gourd?</label>
+        <div class="radio-group">
+          <label class="inline-label"><input type="radio" name="aware" value="Yes" required> Yes</label>
+          <label class="inline-label"><input type="radio" name="aware" value="No"> No</label>
+        </div>
+
+        <label>12. What health benefits do you associate with bitter gourd?</label>
+        <div class="checkbox-group">
+          <label><input type="checkbox" name="health[]" value="Diabetes"> Diabetes control</label>
+          <label><input type="checkbox" name="health[]" value="Immunity"> Boosted immunity</label>
+          <label><input type="checkbox" name="health[]" value="Weight"> Weight loss</label>
+          <label><input type="checkbox" name="health[]" value="Skin"> Skin health</label>
+          <label><input type="checkbox" name="health[]" value="Digestion"> Improved digestion</label>
+          <label><input type="checkbox" name="health[]" value="Liver"> Liver detox</label>
+          <label><input type="checkbox" name="health[]" value="Other"> Other</label>
+          <input type="text" name="health_other" placeholder="Other health benefit (optional)">
+        </div>
+      </div>
+
+      <button type="submit">Submit</button>
+
+    </form>
+  </div>
+</body>
+</html>
